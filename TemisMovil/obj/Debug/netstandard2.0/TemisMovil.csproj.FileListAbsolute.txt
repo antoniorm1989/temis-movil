@@ -1,0 +1,14 @@
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\bin\Debug\netstandard2.0\TemisMovil.deps.json
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\bin\Debug\netstandard2.0\TemisMovil.dll
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\bin\Debug\netstandard2.0\TemisMovil.pdb
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\CrearEditarEventoPage.xaml.g.cs
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\InicioPage.xaml.g.cs
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\RegistroPage.xaml.g.cs
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\TemisMovil.csproj.CoreCompileInputs.cache
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\TemisMovil.AssemblyInfoInputs.cache
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\TemisMovil.AssemblyInfo.cs
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\TemisMovil.dll
+C:\Users\arosales\Desktop\xamarin\TemisMovil\TemisMovil\TemisMovil\obj\Debug\netstandard2.0\TemisMovil.pdb

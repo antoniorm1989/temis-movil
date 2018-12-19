@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemisMovil.CrearEditarEventoPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar"
+                     Command="{Binding GuardarCommand}"
+                     CommandParameter="{Binding Evento}"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="containerStackLayout"
+                     CompressedLayout.IsHeadless="True">
+            
+            <Entry  x:Name="nombre"
+                    Placeholder="Nombre del evento"
+                    Text="{Binding Nombre, Mode=TwoWay}"/>
+            
+            <DatePicker x:Name="fechaInicio"
+                        Format="D"
+                        Margin="30, 0, 0, 30" 
+                        Date="{Binding FechaInicio, Mode=TwoWay}"/>
+            
+            <TimePicker x:Name="FechaInicioHora"
+                        Format="D"
+                        Margin="30, 0, 0, 30" 
+                        Time="{Binding FechaInicio, Mode=TwoWay}"/>
+            
+            <DatePicker x:Name="fechaFin"
+                        Format="D"
+                        Margin="30, 0, 0, 30" 
+                        Date="{Binding FechaFin, Mode=TwoWay}"/>
+
+            <Button Text="Anexa una foto"
+                    Clicked="Button_Clicked"/>
+            <Image x:Name="selectedImage"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

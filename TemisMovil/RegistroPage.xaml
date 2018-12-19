@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemisMovil.RegistroPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="containerStackLayout"
+                     CompressedLayout.IsHeadless="True"
+                     VerticalOptions="Center"
+                     Margin="20">
+
+            <Entry x:Name="correoEntry"
+                   Text="{Binding Email, Mode=TwoWay}"
+                   Placeholder="Correo electrónico"
+                   Keyboard="Email"/>
+
+            <Entry x:Name="contrasenaEntry"
+                   Text="{Binding Password, Mode=TwoWay}"
+                   Placeholder="Contraseña"
+                   IsPassword="True"/>
+
+            <Entry x:Name="contrasenaConfirmEntry"
+                   Text="{Binding ConfirmPassword, Mode=TwoWay}"
+                   Placeholder="Confirm Password"
+                   IsPassword="True"/>
+
+            <Button x:Name="RegistrarButton"
+                    Margin="0, 30, 0, 0"
+                    Text="Registrar"
+                    Command="{Binding RegistrarCommand}"
+                    CommandParameter="{Binding User}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

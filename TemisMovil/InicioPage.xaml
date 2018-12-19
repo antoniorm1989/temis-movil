@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TemisMovil"
+             xmlns:converters="clr-namespace:TemisMovil.ViewModel.Converters.Inicio"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             x:Class="TemisMovil.InicioPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:DuracionEventoConverter x:Key="converter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Crear"
+                     Icon="add.png"
+                     Command="{Binding NavigationCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout CompressedLayout.IsHeadless="True">
+            
+            <Entry x:Name="BusquedaEntry"
+                   Placeholder="Evento a buscar..."/>
+            <ListView x:Name="eventosListView"
+                      Margin="20,0"
+                      IsPullToRefreshEnabled="True"
+                      IsRefreshing="True"
+                      RefreshCommand="{Binding RefreshCommand}"
+                      ItemsSource="{Binding Eventos}"
+                      SelectedItem="{Binding Evento, Mode=TwoWay}"
+                      HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Text="{Binding Nombre}"
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Row="1"
+                                       TextColor="DodgerBlue"
+                                       Text="{Binding FechaInicio, StringFormat='{}{0:dd.MM.yyyy}'}"
+                                       FontSize="10"/>
+                                <Label Grid.Column="1"
+                                       Text="{Binding ., Converter={StaticResource converter}}"/>
+                            </Grid>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Delete"
+                                          IsDestructive="True"
+                                          Command="{Binding BorrarEventoCommand}"/>
+                                <MenuItem Text="Edit"/>
+                                <MenuItem/>
+                            </ViewCell.ContextActions>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+           
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

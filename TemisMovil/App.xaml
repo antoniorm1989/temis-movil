@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemisMovil.App">
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <Color x:Key="primarioBase">#1976D2</Color>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource primarioBase}"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource primarioBase}"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HeightRequest" Value="30"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="9"/>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
