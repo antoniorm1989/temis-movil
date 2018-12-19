@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "720267970312",
+    "firebase_url": "https://xamarinandorid.firebaseio.com",
+    "project_id": "xamarinandorid",
+    "storage_bucket": "xamarinandorid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720267970312:android:d7338619e942b903",
+        "android_client_info": {
+          "package_name": "com.temis.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720267970312-cg27r27uqomfj58mll5btj1upsplh555.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe_bifvcQBuIDrfQHX0Uyc_MtgjKDIQuU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
